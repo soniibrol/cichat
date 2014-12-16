@@ -1,0 +1,121 @@
+body{
+	margin: 0;
+	background: #fff;
+	-webkit-animation: bgchangecolor 20s infinite;
+	-moz-animation: bgchangecolor 20s infinite;
+	animation: bgchangecolor 20s infinite;
+}
+
+@-webkit-keyframes bgchangecolor{
+	0% {background: #fff; }
+	25% {background: #aa1; }
+	50% {background: #f00; }
+	75% {background: #aa1; }
+	100% {background: #fff; }
+}
+
+@-moz-keyframes bgchangecolor{
+	0% {background: #fff; }
+	25% {background: #aa1; }
+	50% {background: #f00; }
+	75% {background: #aa1; }
+	100% {background: #fff; }
+}
+
+@keyframes bgchangecolor{
+	0% {background: #fff; }
+	25% {background: #aa1; }
+	50% {background: #f00; }
+	75% {background: #aa1; }
+	100% {background: #fff; }
+}
+
+#messagebox{
+	width: 100%;
+	height: 460px;
+	position: relative;
+	margin-top: 0;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-top: 0px;
+	overflow: scroll;
+}
+
+#messagewrite{
+	width: 80%;
+	padding: 5px;
+}
+
+#friendlist{
+	width: 100%;
+	height: 460px;
+	overflow: scroll;
+}
+
+.msgboxbody-item{
+	width: 100%;
+	height: 460px;
+	position: relative;
+	margin-top: 0;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-top: 0px;
+	overflow: scroll;
+}
+
+ul.friendlist{
+	margin-left: -40px;
+	list-style: none;
+	list-style-position: outside;
+}
+
+ul.friendlist li{
+	list-style: none;
+	min-height: 20px;
+	padding: 10px;
+	margin-bottom: 2px;
+}
+
+ul.friendlist li a,a:hover,a:visited{
+	text-decoration: none;
+	color: #111;
+}
+
+ul.friendlist li:hover,li:visited{
+	background-color: #bbb;
+}
+
+.close-chat{
+	color: #ddd;
+}
+
+#login-box{
+	background-color: #eee;
+	opacity: 0.75;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 150px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 10px;
+}
+
+#login-box-title{
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#login-box-title:hover{
+	-webkit-animation: linkbox 1s ease;
+}
+
+@-webkit-keyframes linkbox{
+	from { color: #222; };
+	to {  color: #fff;};
+}
